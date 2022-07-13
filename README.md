@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an application that loads animal information from Heroku API.
 
-Things you may want to cover:
+Things to keep in mind:
 
-* Ruby version
+* Ruby version 7.0
 
-* System dependencies
+* Stimulus
 
-* Configuration
+* On page load you get five pictures of animals and there is a button to refresh
 
-* Database creation
+* No Database creation
 
-* Database initialization
+* Using window local storage to save favorites
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
