@@ -24,7 +24,7 @@ ul li {
 
 p {
   margin-bottom: 1rem;
-  background-color: #b8336a;
+  background-color: #1D263B;
   margin-top: 8px;
   padding: 8px;
   border-radius: 8px;
@@ -35,4 +35,17 @@ p {
 
 .icon-resize{
   font-size: 28px
+}
+
+.refresh-button{
+  width: 50%;
+  color: #e5e059;
+  background-color: #cb3f77;
+  font-weight: 900;
+  font-family: 'Helvetica', 'Arial', 'sans-serif';
+}
+
+.refresh-button:hover{
+  background-color:#be0e55;
+  color: #e5e059;
 }
