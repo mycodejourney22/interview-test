@@ -7,6 +7,7 @@ export default class extends Controller {
   connect() {
     console.log("connected to the animals controller")
     this.#getanimal()
+    this.num = 1
   }
 
   refreshnew (event){
@@ -31,11 +32,15 @@ export default class extends Controller {
   }
 
   favoriteclick(event) {
+    this.num ++
     event.currentTarget.classList.toggle("img-favorites")
     const formparent = event.currentTarget.parentElement
     const myParent = formparent.parentElement
     const rightParent = myParent.parentElement.innerHTML
-    localStorage.setItem(localStorage.length + 1, rightParent);
+    let local = localStorage.length + 1
+    window.localStorage.setItem(`${local}`, rightParent);
+    console.log(this.num)
+    console.log(localStorage.length)
   }
 
 }

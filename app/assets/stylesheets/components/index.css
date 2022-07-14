@@ -16,6 +16,7 @@ ul {
   background-color: #69EBD0;
   padding-top: 20px;
   border-radius: 8px;
+  padding-bottom: 20px;
 }
 
 ul li {
@@ -31,6 +32,7 @@ p {
   color: #e5e059;
   font-family: 'Helvetica', 'Arial', 'sans-serif';
   font-size: 16px;
+  width: 37rem;
 }
 
 .icon-resize{

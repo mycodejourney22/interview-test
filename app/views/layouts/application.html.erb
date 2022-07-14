@@ -13,6 +13,12 @@
   </head>
 
   <body>
+    <nav class="navbar  navbar-mobile fixed-top navbar-light bg-light" data-controller="navbar" data-action="scroll@window->navbar#updateNavbar">
+      <div class="container-fluid">
+        <h2><%= link_to "Animals", root_path, class: "navbar-brand" %></h2>
+        <h2><%=  link_to "My Favorites", favorites_path, class: "navbar-brand" %></h2>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
