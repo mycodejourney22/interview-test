@@ -5,7 +5,6 @@ export default class extends Controller {
   static targets = ["listAnimal", "favorites"]
 
   connect() {
-    console.log("connected to the animals controller")
     this.#getanimal()
     this.num = 1
   }
@@ -24,7 +23,7 @@ export default class extends Controller {
                           <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${animal.image_link})">
                           <div class= "favorite"><span id="img-icon" data-animals-target="favorites" data-action="click->animals#favoriteclick"><i class="fa-solid fa-heart"></i></span></div>
                          </div>
-                          <p>Name: ${animal.name}  Type: ${animal.animal_type}</p>
+                         <div class="text-bg"><p>Name: ${animal.name}</p> <p>Type: ${animal.animal_type}</p></div>
                         </li>`
         this.listAnimalTarget.insertAdjacentHTML("beforeend",myList )
         });
@@ -33,14 +32,12 @@ export default class extends Controller {
 
   favoriteclick(event) {
     this.num ++
-    event.currentTarget.classList.toggle("img-favorites")
+    event.currentTarget.classList.add("img-favorites")
     const formparent = event.currentTarget.parentElement
     const myParent = formparent.parentElement
     const rightParent = myParent.parentElement.innerHTML
     let local = localStorage.length + 1
     window.localStorage.setItem(`${local}`, rightParent);
-    console.log(this.num)
-    console.log(localStorage.length)
   }
 
 }

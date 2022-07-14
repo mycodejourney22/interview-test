@@ -24,15 +24,11 @@ ul li {
 }
 
 p {
-  margin-bottom: 1rem;
-  background-color: #1D263B;
   margin-top: 8px;
-  padding: 8px;
-  border-radius: 8px;
+  padding: 4px;
   color: #e5e059;
   font-family: 'Helvetica', 'Arial', 'sans-serif';
   font-size: 16px;
-  width: 37rem;
 }
 
 .icon-resize{
@@ -73,4 +69,14 @@ p {
 
 .img-favorites{
   color: red;
+}
+
+.text-bg {
+  background-color: #1D263B;
+  border-radius: 8px;
+  width: 37rem;
+}
+
+.fa-heart:hover{
+  color: #F4F4F4;
 }
