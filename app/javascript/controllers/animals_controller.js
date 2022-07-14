@@ -22,7 +22,7 @@ export default class extends Controller {
                           <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${animal.image_link})">
                           <div class= "favorite"<span id="img-icon" data-animals-target="favorites"  data-action="click->animals#favoriteclick"><i class="fa-solid fa-heart"></i></span></div>
                          </div>
-                         <div class="text-bg"><p>Name: ${animal.name}</p> <p>Type: ${animal.animal_type}</p></div>
+                         <div class="text-bg"><div><p>Name: ${animal.name}</p></div> <p>Type: ${animal.animal_type}</p></div>
                         </li>`
         this.listAnimalTarget.insertAdjacentHTML("beforeend",myList )
         });

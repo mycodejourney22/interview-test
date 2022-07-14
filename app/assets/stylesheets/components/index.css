@@ -27,8 +27,8 @@ p {
   margin-top: 8px;
   padding: 4px;
   color: #e5e059;
-  font-family: 'Helvetica', 'Arial', 'sans-serif';
-  font-size: 16px;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  font-size: 18px;
 }
 
 .icon-resize{
@@ -75,6 +75,10 @@ p {
   background-color: #1D263B;
   border-radius: 8px;
   width: 37rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 12px 0px;
+
 }
 
 .fa-heart:hover{
