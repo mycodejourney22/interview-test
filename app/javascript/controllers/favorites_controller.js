@@ -13,4 +13,8 @@ export default class extends Controller {
       this.myFavoriteTarget.insertAdjacentHTML("beforeend",list)
     })
   }
+
+  favoriteclick(event){
+    console.log(event)
+  }
 }
