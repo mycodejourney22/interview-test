@@ -1,0 +1,14 @@
+@media (max-width: 560px) {
+
+  .card-category {
+    width: 300px
+  }
+
+  p {
+    width: 19rem;
+  }
+
+  h1 {
+    font-size: 17px;
+  }
+}
