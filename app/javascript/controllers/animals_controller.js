@@ -34,11 +34,9 @@ export default class extends Controller {
     this.num ++
     event.currentTarget.classList.add("img-favorites")
     const formparent = event.currentTarget.parentElement
-    const myParent = formparent.parentElement
-    const beforeParent = myParent.parentElement
-    const rightParent = beforeParent.innerHTML
+    const myParent = formparent.parentElement.innerHTML
     const myitem = `<li class="list-inline-item">
-                      ${rightParent}
+                      ${myParent}
                       </li>`
     let local = localStorage.length + 1
     window.localStorage.setItem(`${local}`, myitem);
