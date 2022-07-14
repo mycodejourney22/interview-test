@@ -6,8 +6,9 @@ ruby "3.0.3"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3"
 
-
-gem "sqlite3", "~> 1.4"
+group :devlopment, :test do
+  gem "sqlite3", "~> 1.4"
+end
 
 group :production do
   gem 'pg'
