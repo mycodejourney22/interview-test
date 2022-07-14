@@ -5,7 +5,7 @@ export default class extends Controller {
   static targets = ["myFavorite"]
   connect() {
     const arr = []
-    if (localStorage.length > 1) {
+    if (localStorage.length >= 1) {
       for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
         arr.push(localStorage.getItem(key));
