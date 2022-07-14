@@ -1,0 +1,10 @@
+.navbar{
+  background-color: #E5E059;
+  font-family: 'Merienda', cursive;
+}
+
+.navbar-item{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #E5E059;
+}
