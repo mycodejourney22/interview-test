@@ -37,8 +37,11 @@ export default class extends Controller {
     const myParent = formparent.parentElement
     const beforeParent = myParent.parentElement
     const rightParent = beforeParent.innerHTML
+    const myitem = `<li class="list-inline-item">
+                      ${rightParent}
+                      </li>`
     let local = localStorage.length + 1
-    window.localStorage.setItem(`${local}`, rightParent);
+    window.localStorage.setItem(`${local}`, myitem);
   }
 
 }
