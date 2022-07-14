@@ -34,9 +34,8 @@ export default class extends Controller {
     event.currentTarget.classList.toggle("img-favorites")
     const formparent = event.currentTarget.parentElement
     const myParent = formparent.parentElement
-    const rightParent = myParent.parentElement
-    console.log(rightParent)
+    const rightParent = myParent.parentElement.innerHTML
+    localStorage.setItem(localStorage.length + 1, rightParent);
   }
-
 
 }
