@@ -14,7 +14,4 @@ export default class extends Controller {
     })
   }
 
-  favoriteclick(event){
-    console.log(event)
-  }
 }

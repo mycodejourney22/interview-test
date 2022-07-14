@@ -6,7 +6,6 @@ export default class extends Controller {
 
   connect() {
     this.#getanimal()
-    this.num = 1
   }
 
   refreshnew (event){
@@ -31,7 +30,6 @@ export default class extends Controller {
   }
 
   favoriteclick(event) {
-    this.num ++
     event.currentTarget.classList.add("img-favorites")
     const formparent = event.currentTarget.parentElement
     const myParent = formparent.parentElement.innerHTML
