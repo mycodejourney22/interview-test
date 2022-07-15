@@ -35,18 +35,22 @@ p {
   font-size: 28px
 }
 
+
 .refresh-button{
-  width: 50%;
   color: #e5e059;
-  background-color: #cb3f77;
+  background-color: #1D263B;
   font-weight: 900;
-  font-family: 'Helvetica', 'Arial', 'sans-serif';
+      font-family: 'Epilogue', sans-serif;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .refresh-button:hover{
-  background-color:#be0e55;
-  color: #e5e059;
+  background-color:#e5e059;
+  color: #1D263B;
+      font-family: 'Epilogue', sans-serif;
 }
+
 
 .card-category{
   width: 600px;

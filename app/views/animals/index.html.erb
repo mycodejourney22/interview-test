@@ -3,8 +3,9 @@
     <i class="fa-solid fa-circle fa-stack-2x icon-resize"></i>
     <i class="fa-solid fa-otter fa-stack-1x fa-inverse icon-resize"></i>
   </span>My Animal List</h1>
-  <div class="button mb-3 text-center" data-action="click->animals#refreshnew">
-    <button type="button" class="btn btn-warning refresh-button">Get New Animals</button>
+  <div class="button mb-3 text-center" data-controller="button" data-action="click->animals#refreshnew">
+    <span data-button-target="firstbutton" data-action="mouseenter->button#mouseaction"><button type="button" class="btn btn-warning refresh-button">Get New Animals</button></span>
+    <span class="d-none" data-button-target="secondbutton" data-action="mouseleave->button#mouseinaction"><button type="button" class="btn btn-warning refresh-button">Get New Animals  <i class="fa-solid fa-arrow-trend-up"></i></button></span>
   </div>
   <ul data-animals-target="listAnimal"></ul>
   <li class="list-inline-item"><div></div></li>
